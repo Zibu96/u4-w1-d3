@@ -10,6 +10,8 @@ public class Main {
         Calls calls4 = new Calls(31, 329765544);
         Calls calls5 = new Calls(56, 34812789);
 
+        Calls[] arrOfCalls = {calls1, calls2, calls3, calls4, calls5};
+        Sim.setCalls(arrOfCalls);
         System.out.println(Calls.stampaChiamata(calls1));
 
         Sim sim1 = new Sim(35967543);

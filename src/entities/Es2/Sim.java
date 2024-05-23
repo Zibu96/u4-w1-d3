@@ -1,5 +1,7 @@
 package entities.Es2;
 
+import java.util.Arrays;
+
 public class Sim {
 
     private int tel;
@@ -16,7 +18,11 @@ public class Sim {
     public static String stampaSim(Sim call) {
 
         return "la SIM del numero " + call.tel + "ha credito " + call.credit +
-                "e le seguenti chiamate " + call.calls;
+                "e le seguenti chiamate " + Arrays.toString(call.calls);
+    }
+
+    public void setCalls(Calls[] call) {
+        calls = call;
     }
 
 
